@@ -14,7 +14,7 @@ public class BeanConfig {
     private String region;
 
     @Bean
-    public AmazonEventBridge amazonEventBridge () {
+    public AmazonEventBridge amazonEventBridge() {
         return AmazonEventBridgeClient.builder()
                 .withRegion(region)
                 .withCredentials(new DefaultAWSCredentialsProviderChain())
